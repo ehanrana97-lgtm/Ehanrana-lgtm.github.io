@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Graphic Designer Portfolio</title>
+    <style>
+        /* CSS for a Professional Look */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #121212; /* Dark professional background */
+            color: #e0e0e0; /* Light gray text for contrast */
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #4CAF50; /* A vibrant green accent color */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50; /* Hover effect with the accent color */
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-item {
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            padding: 1rem 0;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Graphic Designer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate graphic designer with a keen eye for detail and a love for creating visually stunning and effective designs. My work spans a range of projects, from digital ads and social media graphics to print materials and branding. I'm always eager to take on new challenges and bring creative ideas to life. Let's create something amazing together!</p>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="section portfolio-grid">
+    <div class="container">
+        <h2>My Work</h2>
+        <div class="project-item">
+            <img src="images/my-new-proj.jpg" alt="Pizza Classic Ad">
+            <h3>Pizza Classic</h3>
+        </div>
+        
+        <div class="project-item">
+            <img src="images/furniture_ad.jpg" alt="Modern Furniture Ad">
+            <h3>Modern Furniture</h3>
+        </div>
+
+        <div class="project-item">
+            <img src="images/pro.jpg" alt="A photo of my new logo design.">
+            <h3>My New Project</h3>
+        </div>
+        
+        </div>
+</section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch! You can reach me at:</p>
+                <ul>
+                      <li>Email: <a href="mailto:ehanrana97@gmail.com">ehanrana97@gmail.com</a></li>
+                    <li>Whatsap: <a href="https://wa.me/923032223169" target="_blank">0303-2223169</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Ehan Rana. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically update the current year in the footer
+        const yearEl = document.getElementById('current-year');
+        const currentYear = new Date().getFullYear();
+        yearEl.textContent = currentYear;
+    </script>
+
+</body>
+</html>
